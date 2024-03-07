@@ -2,8 +2,15 @@
   position: sticky;
   background-color: transparent;
   margin: 10px 0;
-  box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
-    2px 2px 3px aliceblue;
+  background-image: linear-gradient(
+    to bottom,
+    rgb(49, 138, 174),
+    rgb(109, 179, 207),
+    rgb(115, 201, 235),
+    rgb(48, 117, 144)
+  );
+  /* box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
+    2px 2px 3px aliceblue; */
 }
 .second {
   display: flex;

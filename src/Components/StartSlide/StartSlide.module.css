@@ -1,9 +1,16 @@
 .whole {
-  background-image: url(../Images/home.png);
+  /* background-image: url(../Images/home.png);
+   */
+  background-image: linear-gradient(
+    to right,
+    rgb(78, 113, 201),
+    skyblue,
+    rgb(40, 67, 96),
+    rgb(51, 81, 158)
+  );
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   position: relative;
-  background-position: 10px;
   align-items: center;
   margin-top: 3px;
   height: 400px;
@@ -20,8 +27,9 @@
   padding: 40px 20px;
   margin-left: 100px;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
-    2px 2px 3px aliceblue;
+  /* box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
+    2px 2px 3px aliceblue; */
+  border: 1px solid aliceblue;
 }
 .third {
   color: aliceblue;
@@ -32,23 +40,24 @@
   position: relative;
   left: -100px;
   border-radius: 10px;
-  box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
-    2px 2px 3px aliceblue;
-  padding: 70px 20px 70px 20px;
+  border: 1px solid aliceblue;
+  /* box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
+    2px 2px 3px aliceblue; */
+  padding: 40px 20px;
 }
 .h3 {
+  text-align: center;
   font-size: 40px;
-  font-weight: 700;
-  color: black;
+  font-weight: bolder;
+  color: rgb(155, 255, 5);
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 .p {
+  text-align: center;
   font-size: 20px;
 }
-@media screen and (max-width: 1100px) {
-  .h3 {
-    text-align: center;
-  }
-}
+
 @media screen and (min-width: 500px) and (max-width: 1100px) {
   .whole {
     display: flex;
@@ -92,10 +101,12 @@
     padding: 10px;
     left: 0;
   }
+}
+@media screen and (max-width: 600px) {
   .h3 {
-    font-size: 23px;
+    font-size: 24px;
   }
   .p {
-    font-size: 13px;
+    font-size: 14px;
   }
 }

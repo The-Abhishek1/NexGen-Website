@@ -13,7 +13,7 @@ export default function StarSlide() {
         </div>
         <div></div>
         <div className={s.third}>
-          <p>
+          <p className={s.p}>
             NexGen Coders is a cutting-edge IT startup dedicated to transforming
             digital landscapes with our comprehensive suite of services.
             Specializing in web development, UI/UX design, website maintenance,

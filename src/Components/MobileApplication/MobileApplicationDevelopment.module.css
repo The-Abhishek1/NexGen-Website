@@ -1,10 +1,11 @@
 .whole {
-  background-image: url("../Images//home.png");
+  /* background-image: url("../Images//home.png");
   background-size: cover;
-  background-position: 10px;
+  background-position: 10px; */
+  background-color: aliceblue;
 }
 .container {
-  color: aliceblue;
+  /* color: aliceblue; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
@@ -12,11 +13,12 @@
   align-items: center;
 }
 .first {
+  border: 1px solid gray;
   padding: 30px 20px;
   position: relative;
   left: 40%;
-  box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
-    2px 2px 3px aliceblue;
+  /* box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
+    2px 2px 3px aliceblue; */
   border-radius: 10px;
 }
 .h3 {
@@ -24,10 +26,14 @@
   color: black;
 }
 .second {
+  border: 1px solid gray;
   padding: 50px 30px;
-  box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
-    2px 2px 3px aliceblue;
+  /* box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
+    2px 2px 3px aliceblue; */
   border-radius: 10px;
+}
+.p {
+  text-align: center;
 }
 @media screen and (max-width: 1100px) {
   .container {
@@ -58,5 +64,13 @@
   .second {
     position: relative;
     left: -27%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .h3 {
+    font-size: 17px;
+  }
+  .p {
+    font-size: 14px;
   }
 }
