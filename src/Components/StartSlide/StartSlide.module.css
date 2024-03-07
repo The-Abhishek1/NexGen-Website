@@ -3,7 +3,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   position: relative;
-
+  background-position: 10px;
   align-items: center;
   margin-top: 3px;
   height: 400px;
