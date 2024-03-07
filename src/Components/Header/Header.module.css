@@ -1,0 +1,17 @@
+.header {
+  position: sticky;
+  background-color: transparent;
+  margin: 10px 0;
+  box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
+    2px 2px 3px aliceblue;
+}
+.second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+.img {
+  border-radius: 40px;
+}

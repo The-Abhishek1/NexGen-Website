@@ -1,0 +1,47 @@
+.whole {
+  background-color: black;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+.items {
+  background-image: url("../Images/robot.jpg");
+  background-size: cover;
+  padding: 30px;
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.subItems {
+  color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black, -3px -3px 10px black, 2px 2px 3px black;
+}
+.h4 {
+  text-align: center;
+  font-size: 20px;
+  color: black;
+}
+.p {
+  margin-top: 10px;
+}
+@media screen and (max-width: 750px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .whole {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    padding: 15px;
+  }
+  .items {
+    padding: 15px;
+  }
+}
