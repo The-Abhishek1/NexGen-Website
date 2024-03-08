@@ -1,8 +1,5 @@
 .whole {
-  /* background-image: url("../Images//home.png");
-  background-size: cover; */
   background-color: black;
-  background-position: 10px;
   position: relative;
   top: 55px;
 }
@@ -15,22 +12,23 @@
   align-items: center;
 }
 .first {
+  border: 1px solid gray;
   padding: 50px 30px;
   position: relative;
   left: 40%;
-  border: 1px solid gray;
-  /* box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
-    2px 2px 3px aliceblue; */
   border-radius: 10px;
 }
 .h3 {
   text-align: center;
 }
 .second {
+  float: right;
+  height: 260px;
+  width: 250px;
+  background-position: center;
+  background-size: cover;
   padding: 30px 20px;
-  border: 1px solid gray;
-  /* box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
-    2px 2px 3px aliceblue; */
+  background-image: url("../Images/uiuxd.jpg");
   border-radius: 10px;
 }
 .p {
@@ -51,7 +49,6 @@
     padding: 25px 10px;
   }
   .second {
-    width: auto;
     margin-left: 0;
     padding: 15px;
   }
@@ -64,8 +61,8 @@
 }
 @media screen and (min-width: 1100px) {
   .second {
-    position: relative;
-    left: -27%;
+    height: 300px;
+    width: 300px;
   }
 }
 

@@ -11,9 +11,12 @@ export default function StarSlide() {
             brighter, connected future.
           </p>
         </div>
-        <div></div>
-        <div className={s.third}>
-          <p className={s.p}>
+        <div className={s.third}></div>
+      </div>
+    </>
+  );
+}
+/*  <p className={s.p}>
             NexGen Coders is a cutting-edge IT startup dedicated to transforming
             digital landscapes with our comprehensive suite of services.
             Specializing in web development, UI/UX design, website maintenance,
@@ -22,9 +25,5 @@ export default function StarSlide() {
             next-generation technologies and client-centric solutions, we propel
             businesses forward, empowering them to thrive in today's dynamic
             market.
-          </p>
-        </div>
-      </div>
-    </>
-  );
-}
+          </p >
+            */

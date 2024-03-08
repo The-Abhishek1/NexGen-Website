@@ -1,26 +1,22 @@
 import React from "react";
 import m from "./MobileApplicationDevelopment.module.css";
-export default function MobileApplication() {
+export default function WebDevelopment() {
   return (
     <>
       <div className={m.whole}>
         <div className={m.container}>
+          <div className={m.second}></div>
           <div className={m.first}>
-            <h3 className={m.h3}>Mobile Application Development</h3>
-          </div>
-          <div></div>
-
-          <div className={m.second}>
             <p className={m.p}>
-              NexGen Coders specializes in crafting innovative mobile
-              applications tailored to your unique requirements. From concept to
-              deployment, we leverage cutting-edge technologies to deliver
-              seamless user experiences across iOS and Android platforms. Trust
-              us to transform your ideas into powerful, intuitive mobile
-              solutions that drive engagement and success in the digital
-              marketplace.
+              NexGen Coders specializes in mobile application development,
+              crafting intuitive and feature-rich apps tailored to your business
+              needs. With a focus on user experience and cutting-edge
+              technology, we ensure your app stands out in the competitive
+              market. Trust us to bring your mobile vision to life with
+              expertise and innovation.
             </p>
           </div>
+          <div></div>
         </div>
       </div>
     </>

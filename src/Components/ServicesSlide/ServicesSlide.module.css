@@ -33,8 +33,14 @@
   border-radius: 10px;
   border: 1px solid gray;
 }
+.h2 {
+  text-align: center;
+  margin: 10px;
+  color: aliceblue;
+  text-transform: uppercase;
+}
 .h4 {
-  color: rgb(38, 0, 255);
+  color: rgb(0, 179, 255);
   text-align: center;
   font-size: 20px;
 }
@@ -69,5 +75,31 @@
   }
   .p {
     font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .h2 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1100px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .subItems {
+    height: 270px;
+  }
+}
+@media screen and (min-width: 1100px) and (max-width: 1400px) {
+  .subItems {
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .subItems {
+    height: 150px;
   }
 }

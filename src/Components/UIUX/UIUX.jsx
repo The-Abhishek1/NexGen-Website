@@ -1,6 +1,6 @@
 import React from "react";
 import u from "./UIUX.module.css";
-export default function UIUX() {
+export default function WebDevelopment() {
   return (
     <>
       <div className={u.whole}>
@@ -16,9 +16,7 @@ export default function UIUX() {
             </p>
           </div>
           <div></div>
-          <div className={u.second}>
-            <h3 className={u.h3}>UI/UI Design</h3>
-          </div>
+          <div className={u.second}></div>
         </div>
       </div>
     </>

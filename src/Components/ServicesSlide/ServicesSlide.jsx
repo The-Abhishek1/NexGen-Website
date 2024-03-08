@@ -4,6 +4,7 @@ export default function ServicesSlide() {
   return (
     <>
       <div className={s.whole}>
+        <h2 className={s.h2}>Our Services</h2>
         <div className={s.container}>
           <div className={s.items}>
             <div className={s.subItems}>

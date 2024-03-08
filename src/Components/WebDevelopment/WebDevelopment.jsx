@@ -16,9 +16,7 @@ export default function WebDevelopment() {
             </p>
           </div>
           <div></div>
-          <div className={w.second}>
-            <h3 className={w.h3}>Web Development</h3>
-          </div>
+          <div className={w.second}></div>
         </div>
       </div>
     </>

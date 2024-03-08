@@ -71,7 +71,7 @@ export default function SubscibeSlide() {
             Contact
           </button>
         </div>
-        <div className={s.items}>
+        <div className={s.itemss}>
           <h5 className={s.h5}>Website Management</h5>
           <h4 className={s.h4}>$50/Site</h4>
           <button className={s.button} onClick={() => setShow(true)}>
