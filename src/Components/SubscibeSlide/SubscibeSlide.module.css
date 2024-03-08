@@ -8,21 +8,20 @@
 .contact {
   position: absolute;
   padding: 10px;
-  z-index: 1;
+
   left: 50%;
   top: 50%;
   transform: translate(-50%, -23%);
 }
 .blur {
-  background-image: url("../Images//pexels-photo-1921326.jpeg");
+  background-image: url("../Images//Websited.jpg");
   background-position: center;
   background-size: cover;
   height: 350px;
   z-index: -1;
-  width: 500px;
-  border: 1px solid gray;
+  width: 350px;
   border-radius: 20px;
-  filter: blur(1.5px);
+  box-shadow: 2px 2px 5px black, -3px -3px 10px black, 2px 2px 3px black;
 }
 .form {
   z-index: 2;
@@ -36,7 +35,7 @@
   justify-content: space-between;
   flex-direction: column;
   border-radius: 20px;
-  padding: 40px 20px;
+  padding: 40px 0px;
   height: 350px;
 }
 .contactButton {
@@ -50,6 +49,7 @@
   border-radius: 10px;
 }
 .select {
+  border: 1px solid gray;
   width: 70%;
   padding: 10px;
   border: none;
@@ -65,6 +65,7 @@
   border: none;
   border-radius: 10px;
   outline: none;
+  border: 1px solid gray;
   background-color: aliceblue;
 }
 .h3 {
@@ -106,6 +107,7 @@
   text-align: center;
 }
 .button {
+  cursor: pointer;
   padding: 10px 30px;
   border-radius: 10px;
   color: aliceblue;
@@ -144,9 +146,12 @@
     font-size: 14px;
   }
   .blur {
-    width: 350px;
+    height: 250px;
+    width: 300px;
   }
   .form {
+    top: -250px;
+    height: 250px;
     padding: 30px 5px;
   }
 }
