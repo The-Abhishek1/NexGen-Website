@@ -52,6 +52,7 @@
   border: none;
   border-radius: 7px;
   text-align: center;
+  background-color: aliceblue;
 }
 .button {
   padding: 5px 20px;

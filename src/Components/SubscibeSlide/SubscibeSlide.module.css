@@ -55,13 +55,17 @@
   border: none;
   border-radius: 10px;
   outline: none;
+  text-align: center;
+  background-color: aliceblue;
 }
 .input {
+  text-align: center;
   padding: 10px;
   width: 70%;
   border: none;
   border-radius: 10px;
   outline: none;
+  background-color: aliceblue;
 }
 .h3 {
   font-size: 30px;
