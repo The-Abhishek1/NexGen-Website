@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  Instagram,
-  YouTube,
-  ReportGmailerrorredOutlined,
-} from "@mui/icons-material";
+import { Instagram, YouTube, WhatsApp } from "@mui/icons-material";
 import c from "./ContactUs.module.css";
 export default function ContactUs() {
   return (
@@ -12,8 +8,8 @@ export default function ContactUs() {
         <div className={c.items}>
           <div className={c.subItems1}>
             <p className={c.ip}>
-              <ReportGmailerrorredOutlined />
-              E-Mail
+              <WhatsApp />
+              WhatsApp
             </p>
             <p className={c.ip}>
               <YouTube />
@@ -30,11 +26,16 @@ export default function ContactUs() {
             </div>
             <div className={c.childItem}>
               <input
-                type="number"
+                type="tel"
                 placeholder="Enter Your Number"
                 className={c.input}
               />
-              <button className={c.button}>Submit</button>
+              <button
+                className={c.button}
+                onClick={() => alert("Our Staff will contact you soon...!")}
+              >
+                Submit
+              </button>
             </div>
             <div>
               <p className={c.cp}>

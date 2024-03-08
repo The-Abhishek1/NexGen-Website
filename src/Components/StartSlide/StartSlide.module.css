@@ -1,34 +1,39 @@
+.blur {
+  background-image: url("../Images//animecity.jpeg");
+  height: 100%;
+  position: relative;
+  top: 100px;
+}
+
 .whole {
-  /* background-image: url(../Images/home.png);
-   */
+  background-color: #21d4fd;
   background-image: linear-gradient(
-    to right,
-    rgb(78, 113, 201),
-    skyblue,
-    rgb(40, 67, 96),
-    rgb(51, 81, 158)
+    225deg,
+    #21d4fd 0%,
+    #b721ff 50%,
+    #000000 100%
   );
+
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   position: relative;
+  top: 55px;
   align-items: center;
   margin-top: 3px;
-  height: 400px;
   padding: 20px;
-  width: auto;
   background-size: cover;
 }
 .second {
-  color: white;
+  color: aliceblue;
   display: flex;
+  position: relative;
+  z-index: 2;
   flex-direction: column;
   align-items: center;
   background-color: transparent;
   padding: 40px 20px;
   margin-left: 100px;
   border-radius: 10px;
-  /* box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
-    2px 2px 3px aliceblue; */
   border: 1px solid aliceblue;
 }
 .third {
@@ -41,15 +46,14 @@
   left: -100px;
   border-radius: 10px;
   border: 1px solid aliceblue;
-  /* box-shadow: 2px 2px 5px aliceblue, -3px -3px 10px aliceblue,
-    2px 2px 3px aliceblue; */
   padding: 40px 20px;
 }
 .h3 {
+  font-style: italic;
   text-align: center;
   font-size: 40px;
   font-weight: bolder;
-  color: rgb(155, 255, 5);
+  color: rgb(255, 0, 0);
   text-transform: uppercase;
   margin-bottom: 10px;
 }

@@ -3,6 +3,8 @@
   background-size: cover; */
   background-color: black;
   background-position: 10px;
+  position: relative;
+  top: 55px;
 }
 .container {
   color: aliceblue;

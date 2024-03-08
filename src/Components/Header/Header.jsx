@@ -18,16 +18,28 @@ export default function Header() {
   return (
     <>
       <div className={h.header}>
-        <div className={h.second}>
-          <div>
-            <img src={Logo} alt="" height={45} className={h.img} />
-          </div>
-          <div>
-            {darkMode ? (
-              <DarkModeIcon sx={{ fontSize: 27 }} onClick={LightMode} />
-            ) : (
-              <LightModeIcon sx={{ fontSize: 27 }} onClick={DarkMode} />
-            )}
+        <div className={h.first}>
+          <div className={h.second}>
+            <div>
+              <img src={Logo} alt="" height={45} className={h.img} />
+            </div>
+            <div></div>
+            <div></div>
+            <div>
+              {darkMode ? (
+                <DarkModeIcon
+                  sx={{ fontSize: 27 }}
+                  onClick={LightMode}
+                  className={h.icon}
+                />
+              ) : (
+                <LightModeIcon
+                  sx={{ fontSize: 27 }}
+                  onClick={DarkMode}
+                  className={h.icon}
+                />
+              )}
+            </div>
           </div>
         </div>
       </div>

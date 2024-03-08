@@ -1,6 +1,8 @@
 .whole {
   background-color: aliceblue;
   padding: 20px;
+  position: relative;
+  top: 55px;
 }
 .container {
   display: flex;
@@ -62,6 +64,7 @@
   text-transform: uppercase;
 }
 .item {
+  color: gray;
   border-top: 1px solid gray;
   padding: 10px;
   display: flex;

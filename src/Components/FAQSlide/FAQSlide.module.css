@@ -2,6 +2,8 @@
   background-color: black;
   color: aliceblue;
   padding: 20px 250px;
+  position: relative;
+  top: 55px;
 }
 .h1 {
   text-align: center;

@@ -21,7 +21,7 @@ export default function StarSlide() {
             expertise to craft seamless digital experiences. With a focus on
             next-generation technologies and client-centric solutions, we propel
             businesses forward, empowering them to thrive in today's dynamic
-            market
+            market.
           </p>
         </div>
       </div>
