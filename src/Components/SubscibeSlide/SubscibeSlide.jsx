@@ -52,28 +52,28 @@ export default function SubscibeSlide() {
       <div className={s.container}>
         <div className={s.items}>
           <h5 className={s.h5}>Web Development</h5>
-          <h4 className={s.h4}>$99/Project</h4>
+          <h4 className={s.h4}>$1,000 to $10,000/Project</h4>
           <button className={s.button} onClick={() => setShow(true)}>
             Contact
           </button>
         </div>
         <div className={s.items}>
           <h5 className={s.h5}>Mobile Application Development</h5>
-          <h4 className={s.h4}>$119/Project</h4>
+          <h4 className={s.h4}>$5,000 to $20,000/Project</h4>
           <button className={s.button} onClick={() => setShow(true)}>
             Contact
           </button>
         </div>
         <div className={s.items}>
           <h5 className={s.h5}>UI/UX Design</h5>
-          <h4 className={s.h4}>$75/Project</h4>
+          <h4 className={s.h4}>$5,000 to $30,000/Project</h4>
           <button className={s.button} onClick={() => setShow(true)}>
             Contact
           </button>
         </div>
         <div className={s.itemss}>
           <h5 className={s.h5}>Website Management</h5>
-          <h4 className={s.h4}>$50/Site</h4>
+          <h4 className={s.h4}>$100 to $500/Site</h4>
           <button className={s.button} onClick={() => setShow(true)}>
             Contact
           </button>
