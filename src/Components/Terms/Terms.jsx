@@ -8,6 +8,7 @@ export default function Terms() {
     <>
       {show ? (
         <div className={t.container}>
+          <hr />
           <div className={t.whole}>
             <h2 className={t.h2}>NexGen coders Terms & Conditions</h2>
             <p className={t.p}>

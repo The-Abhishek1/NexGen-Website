@@ -3,7 +3,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 13%);
+  transform: translate(-50%, 12%);
   background-color: aliceblue;
   padding: 10px;
 }
@@ -12,7 +12,6 @@
   flex-direction: column;
   gap: 10px;
   padding: 20px;
-  border: 1px solid gray;
 }
 .items {
   display: flex;
@@ -21,6 +20,7 @@
 }
 .h2 {
   text-align: center;
+  margin: 15px 0 15px 0;
 }
 .p {
   text-align: center;
@@ -35,4 +35,12 @@
   color: aliceblue;
   cursor: pointer;
   border-radius: 5px;
+}
+.h4 {
+  margin: 5px 0 10px 0;
+}
+@media screen and (max-width: 600px) {
+  .h2 {
+    font-size: 21px;
+  }
 }

@@ -8,6 +8,7 @@ export default function Privacy() {
     <>
       {show ? (
         <div className={p.container}>
+          <hr />
           <div className={p.whole}>
             <h2 className={p.h2}>NexGen Coders Privacy Policy</h2>
             <p className={p.p}>
