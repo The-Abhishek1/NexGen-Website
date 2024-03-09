@@ -1,24 +1,78 @@
 import React, { useState } from "react";
-import LightModeIcon from "@mui/icons-material/LightMode";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
 import Logo from "../Images/robot.jpg";
 import h from "./Header.module.css";
-
+import { db } from "../Firebase/FirebaseConfig";
+import { useForm } from "react-hook-form";
+import { collection, addDoc } from "firebase/firestore";
 export default function Header() {
-  //State for lightmode and darkmode toggle
-
-  const [darkMode, setDarkMode] = useState(false);
-
-  const DarkMode = () => {
-    setDarkMode(true);
+  const [show, setShow] = useState(false);
+  const { register, handleSubmit, reset } = useForm({
+    shouldUseNativeValidation: true,
+  });
+  const onSubmit = async (data) => {
+    try {
+      const docRef = await addDoc(collection(db, "Join"), {
+        Name: data.name,
+        Email: data.email,
+        Phone: data.number,
+      });
+      console.log("Document written with ID: ", docRef.id);
+      reset();
+      setShow(false);
+    } catch (e) {
+      console.error("Error adding document: ", e);
+    }
+    alert("Your message has been received, Our Staff will contact you soon!!!");
   };
-  const LightMode = () => {
-    setDarkMode(false);
-  };
+
   return (
     <>
       <div className={h.header}>
         <div className={h.first}>
+          {show ? (
+            <div className={h.contact}>
+              <div className={h.blur}></div>
+              <form
+                action=""
+                className={h.form}
+                onSubmit={handleSubmit(onSubmit)}
+              >
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter Your Name"
+                  className={h.input}
+                  {...register("name", { required: "Please enter your name." })}
+                  pattern="^[A-Za-z][A-Za-z_]{7,29}$"
+                />
+                <input
+                  type="tel"
+                  name="number"
+                  placeholder="Enter Your Number"
+                  className={h.input}
+                  {...register("number", {
+                    required: "Please enter your number.",
+                    maxLength: 10,
+                    minLength: 10,
+                  })}
+                />
+                <input
+                  type="email"
+                  name="email"
+                  className={h.input}
+                  placeholder="Enter Your Email"
+                  {...register("email", {
+                    required: "Please enter your email.",
+                  })}
+                />
+                <input
+                  type="submit"
+                  value="Submit"
+                  className={h.contactButton}
+                />
+              </form>
+            </div>
+          ) : null}
           <div className={h.second}>
             <div>
               <img src={Logo} alt="" height={45} className={h.img} />
@@ -26,19 +80,9 @@ export default function Header() {
             <div></div>
             <div></div>
             <div>
-              {darkMode ? (
-                <DarkModeIcon
-                  sx={{ fontSize: 27 }}
-                  onClick={LightMode}
-                  className={h.icon}
-                />
-              ) : (
-                <LightModeIcon
-                  sx={{ fontSize: 27 }}
-                  onClick={DarkMode}
-                  className={h.icon}
-                />
-              )}
+              <button className={h.button} onClick={() => setShow(!show)}>
+                Join Us
+              </button>
             </div>
           </div>
         </div>

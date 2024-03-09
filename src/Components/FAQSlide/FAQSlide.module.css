@@ -46,13 +46,18 @@
   }
 }
 @media screen and (max-width: 400px) {
-  .h3 {
-    font-size: 17px;
-  }
   .p {
-    font-size: 13px;
+    font-size: 12px;
   }
   .items {
     padding: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .h3 {
+    font-size: 14px;
+  }
+  .p {
+    font-size: 13px;
   }
 }
