@@ -39,13 +39,16 @@ export default function ContactUs() {
               </p>
             </a>
 
-            <a href="https://www.google.com/" className={c.a}>
+            <a href="https://www.youtube.com/@idiot017" className={c.a}>
               <p className={c.ip}>
                 <YouTube />
                 YouTube
               </p>
             </a>
-            <a href="https://www.google.com/" className={c.a}>
+            <a
+              href="https://www.instagram.com/abhishekg0wda_02/"
+              className={c.a}
+            >
               <p className={c.ip}>
                 <Instagram />
                 Instagram
