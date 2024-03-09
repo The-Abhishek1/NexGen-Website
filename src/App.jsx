@@ -8,11 +8,9 @@ import SubscibeSlide from "./Components/SubscibeSlide/SubscibeSlide";
 import FAQSlide from "./Components/FAQSlide/FAQSlide";
 import UIUX from "./Components/UIUX/UIUX";
 import ContactUs from "./Components/ContactUs/ContactUs";
-
 import a from "../src/App.module.css";
-function App() {
-  const [count, setCount] = useState(0);
 
+function App() {
   return (
     <>
       <div className={a.container}>

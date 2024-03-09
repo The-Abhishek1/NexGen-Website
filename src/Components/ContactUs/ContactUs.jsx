@@ -1,11 +1,15 @@
-import React from "react";
-import { Instagram, YouTube, WhatsApp } from "@mui/icons-material";
+import React, { useState } from "react";
+import { Instagram, YouTube, WhatsApp, PrivacyTip } from "@mui/icons-material";
 import c from "./ContactUs.module.css";
 import { db } from "../Firebase/FirebaseConfig";
 import { useForm } from "react-hook-form";
 import { collection, addDoc } from "firebase/firestore";
+import Terms from "../Terms/Terms";
+import Privacy from "../Privacy/Privacy";
 
 export default function ContactUs() {
+  const [terms, setTerms] = useState(false);
+  const [privacy, setPrivacy] = useState(false);
   const { register, handleSubmit, reset } = useForm({
     shouldUseNativeValidation: true,
   });
@@ -74,10 +78,28 @@ export default function ContactUs() {
         </div>
         <div className={c.item}>
           <h4 className={c.ch4}>Copyright @ 2024 NexGenCoder's</h4>
-          <p className={c.p}>Terms</p>
-          <p className={c.p}>Privacy Policy</p>
+          <p
+            className={c.p}
+            onClick={() => {
+              setPrivacy(false);
+              setTerms(!terms);
+            }}
+          >
+            Terms
+          </p>
+          <p
+            className={c.p}
+            onClick={() => {
+              setTerms(false);
+              setPrivacy(!privacy);
+            }}
+          >
+            Privacy Policy
+          </p>
         </div>
       </div>
+      {terms ? <Terms /> : null}
+      {privacy ? <Privacy /> : null}
     </div>
   );
 }

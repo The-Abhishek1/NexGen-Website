@@ -60,4 +60,15 @@
   .p {
     font-size: 13px;
   }
+  .h1 {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .h3 {
+    font-size: 17px;
+  }
+  .p {
+    font-size: 13px;
+  }
 }

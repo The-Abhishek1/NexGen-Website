@@ -7,8 +7,8 @@ export default function StarSlide() {
         <div className={s.second}>
           <h3 className={s.h3}>NexGen Coder's</h3>
           <p className={s.p}>
-            Empowering businesses through innovative digital solutions for a
-            brighter, connected future.
+            "Empowering businesses through innovative digital solutions for a
+            brighter, connected future"
           </p>
         </div>
         <div className={s.third}></div>

@@ -34,6 +34,7 @@
 .h2 {
   text-align: center;
   margin: 10px;
+
   color: aliceblue;
   text-transform: uppercase;
 }
@@ -78,7 +79,7 @@
 
 @media screen and (min-width: 750px) {
   .h2 {
-    font-size: 30px;
+    font-size: 23px;
   }
 }
 

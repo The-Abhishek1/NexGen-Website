@@ -14,7 +14,7 @@
   transform: translate(-50%, -23%);
 }
 .blur {
-  background-image: url("../Images//Websited.jpg");
+  background-image: url("../Images//robot.jpg");
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -24,7 +24,6 @@
   box-shadow: 2px 2px 5px black, -3px -3px 10px black, 2px 2px 3px black;
 }
 .form {
-  z-index: 2;
   background-color: transparent;
   color: aliceblue;
   position: relative;
@@ -32,11 +31,21 @@
   align-items: center;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-direction: column;
   border-radius: 20px;
   padding: 40px 0px;
   height: 350px;
+}
+
+.close {
+  cursor: pointer;
+  color: aliceblue;
+  border: 1px solid gray;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
 }
 .contactButton {
   padding: 10px;
@@ -145,6 +154,26 @@
   .h5 {
     font-size: 14px;
   }
+}
+
+@media screen and (max-width: 600px) {
+  .blur {
+    height: 250px;
+    width: 230px;
+  }
+  .form {
+    top: -250px;
+    height: 250px;
+    padding: 20px 5px;
+  }
+  .input {
+    padding: 7px;
+  }
+  .contactButton {
+    padding: 10px 10px 8px 10px;
+  }
+}
+@media screen and (min-width: 600px) {
   .blur {
     height: 250px;
     width: 300px;

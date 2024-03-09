@@ -1,0 +1,38 @@
+.container {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 13%);
+  background-color: aliceblue;
+  padding: 10px;
+}
+.whole {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid gray;
+}
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.h2 {
+  text-align: center;
+}
+.p {
+  text-align: center;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  background-color: red;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 5px;
+}

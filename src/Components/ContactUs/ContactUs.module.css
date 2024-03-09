@@ -79,6 +79,7 @@
 }
 .p {
   text-decoration: underline;
+  cursor: pointer;
 }
 .cp {
   text-align: center;
@@ -130,6 +131,11 @@
     font-size: 13px;
   }
   .ch4 {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 0px) {
+  .h4 {
     font-size: 13px;
   }
 }

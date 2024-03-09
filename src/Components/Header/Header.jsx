@@ -1,8 +1,9 @@
 import React, { useState } from "react";
-import Logo from "../Images/robot.jpg";
+import Logo from "../Images/cover.png";
 import h from "./Header.module.css";
 import { db } from "../Firebase/FirebaseConfig";
 import { useForm } from "react-hook-form";
+import { Close } from "@mui/icons-material";
 import { collection, addDoc } from "firebase/firestore";
 export default function Header() {
   const [show, setShow] = useState(false);
@@ -24,7 +25,6 @@ export default function Header() {
     }
     alert("Your message has been received, Our Staff will contact you soon!!!");
   };
-
   return (
     <>
       <div className={h.header}>
@@ -32,44 +32,49 @@ export default function Header() {
           {show ? (
             <div className={h.contact}>
               <div className={h.blur}></div>
+              <Close className={h.close} onClick={() => setShow(false)} />
               <form
                 action=""
-                className={h.form}
+                className={h.formm}
                 onSubmit={handleSubmit(onSubmit)}
               >
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Enter Your Name"
-                  className={h.input}
-                  {...register("name", { required: "Please enter your name." })}
-                  pattern="^[A-Za-z][A-Za-z_]{7,29}$"
-                />
-                <input
-                  type="tel"
-                  name="number"
-                  placeholder="Enter Your Number"
-                  className={h.input}
-                  {...register("number", {
-                    required: "Please enter your number.",
-                    maxLength: 10,
-                    minLength: 10,
-                  })}
-                />
-                <input
-                  type="email"
-                  name="email"
-                  className={h.input}
-                  placeholder="Enter Your Email"
-                  {...register("email", {
-                    required: "Please enter your email.",
-                  })}
-                />
-                <input
-                  type="submit"
-                  value="Submit"
-                  className={h.contactButton}
-                />
+                <div className={h.form}>
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Enter Your Name"
+                    className={h.input}
+                    {...register("name", {
+                      required: "Please enter your name.",
+                    })}
+                    pattern="^[A-Za-z][A-Za-z_]{7,29}$"
+                  />
+                  <input
+                    type="tel"
+                    name="number"
+                    placeholder="Enter Your Number"
+                    className={h.input}
+                    {...register("number", {
+                      required: "Please enter your number.",
+                      maxLength: 10,
+                      minLength: 10,
+                    })}
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    className={h.input}
+                    placeholder="Enter Your Email"
+                    {...register("email", {
+                      required: "Please enter your email.",
+                    })}
+                  />
+                  <input
+                    type="submit"
+                    value="Submit"
+                    className={h.contactButton}
+                  />
+                </div>
               </form>
             </div>
           ) : null}
