@@ -13,7 +13,7 @@ export default function Terms() {
             <h2 className={t.h2}>NexGen coders Terms & Conditions</h2>
             <p className={t.p}>
               Welcome to NexGen Coders! Please read these Terms and Conditions
-              ("Terms") carefully before using our services.
+              carefully before using our services.
             </p>
             <Close className={t.close} onClick={() => setShow(false)} />
             <div className={t.items}>

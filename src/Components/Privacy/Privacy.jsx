@@ -12,7 +12,7 @@ export default function Privacy() {
           <div className={p.whole}>
             <h2 className={p.h2}>NexGen Coders Privacy Policy</h2>
             <p className={p.p}>
-              NexGen Coders ("us", "we", or "our") operates the website and is
+              NexGen Coders operates the website and is
               committed to protecting your privacy. This Privacy Policy outlines
               how we collect, use, and disclose personal information when you
               use our services.
