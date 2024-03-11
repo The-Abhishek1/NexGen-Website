@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../Images/cover.png";
+import Logo from "../Images/NexgenWhite.png";
 import h from "./Header.module.css";
 import { db } from "../Firebase/FirebaseConfig";
 import { useForm } from "react-hook-form";
@@ -80,7 +80,7 @@ export default function Header() {
           ) : null}
           <div className={h.second}>
             <div>
-              <img src={Logo} alt="" height={45} className={h.img} />
+              <img src={Logo} alt="" height={45} className={h.img} width={70} />
             </div>
             <div></div>
             <div></div>
