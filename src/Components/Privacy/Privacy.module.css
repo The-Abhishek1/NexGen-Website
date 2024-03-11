@@ -41,6 +41,15 @@
 }
 @media screen and (max-width: 600px) {
   .h2 {
-    font-size: 21px;
+    font-size: 20px;
+  }
+  .h4 {
+    font-size: 16px;
+  }
+  .cp {
+    font-size: 13px;
+  }
+  .p {
+    font-size: 14px;
   }
 }
