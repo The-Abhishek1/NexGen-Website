@@ -7,10 +7,13 @@ import { Close } from "@mui/icons-material";
 import { collection, addDoc } from "firebase/firestore";
 export default function Header() {
   const [show, setShow] = useState(false);
+  const [spinnerShow, setSpinnerShow] = useState(false);
   const { register, handleSubmit, reset } = useForm({
     shouldUseNativeValidation: true,
   });
   const onSubmit = async (data) => {
+    setShow(false);
+    setSpinnerShow(true);
     try {
       const docRef = await addDoc(collection(db, "Join"), {
         Name: data.name,
@@ -19,14 +22,24 @@ export default function Header() {
       });
       console.log("Document written with ID: ", docRef.id);
       reset();
-      setShow(false);
+      setSpinnerShow(false);
+      alert(
+        "Your message has been received, Our Staff will contact you soon!!!"
+      );
     } catch (e) {
       console.error("Error adding document: ", e);
     }
-    alert("Your message has been received, Our Staff will contact you soon!!!");
   };
   return (
     <>
+      {spinnerShow ? (
+        <>
+          <div className={h.spinner1}></div>
+          <div className={h.spinner2}></div>
+          <div className={h.spinner3}></div>
+          <div className={h.spinner4}></div>
+        </>
+      ) : null}
       <div className={h.header}>
         <div className={h.first}>
           {show ? (

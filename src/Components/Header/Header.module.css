@@ -1,3 +1,87 @@
+.spinner1 {
+  position: fixed;
+  background-color: transparent;
+  border-bottom: 3.5px solid red;
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  border-radius: 50%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animation1 1s linear infinite forwards;
+}
+@keyframes animation1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spinner2 {
+  position: fixed;
+  background-color: transparent;
+  border-top: 3.5px solid rgb(205, 255, 4);
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  border-radius: 50%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animation2 1s linear infinite forwards;
+}
+@keyframes animation2 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spinner3 {
+  position: fixed;
+  background-color: transparent;
+  border-right: 4px solid rgb(4, 255, 255);
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  border-radius: 50%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animation3 1s linear infinite forwards;
+}
+@keyframes animation3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.spinner4 {
+  position: fixed;
+  background-color: transparent;
+  border-left: 4px solid rgb(7, 255, 15);
+  width: 60px;
+  height: 60px;
+  z-index: 2;
+  border-radius: 50%;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animation3 1s linear infinite forwards;
+}
+@keyframes animation3 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 .header {
   background-color: transparent;
   z-index: 1;
@@ -38,7 +122,7 @@
   transform: translate(-50%, 50%);
 }
 .blur {
-  background-image: url("../Images//robot.jpg");
+  background-image: url("../Images/form.jpg");
   background-position: center;
   background-size: cover;
   height: 350px;
@@ -66,8 +150,8 @@
 
 .close {
   cursor: pointer;
-  color: aliceblue;
-  border: 1px solid gray;
+  color: rgb(58, 62, 66);
+  border: 1px solid rgb(58, 62, 66);
   position: absolute;
   top: 20px;
   right: 20px;
