@@ -281,3 +281,19 @@
     width: 400px;
   }
 }
+@media screen and (max-width: 750px) {
+  .spinner1,
+  .spinner2,
+  .spinner3,
+  .spinner4 {
+    left: 45%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .spinner1,
+  .spinner2,
+  .spinner3,
+  .spinner4 {
+    left: 48%;
+  }
+}
