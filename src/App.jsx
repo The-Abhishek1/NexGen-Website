@@ -8,6 +8,7 @@ import SubscibeSlide from "./Components/SubscibeSlide/SubscibeSlide";
 import FAQSlide from "./Components/FAQSlide/FAQSlide";
 import UIUX from "./Components/UIUX/UIUX";
 import ContactUs from "./Components/ContactUs/ContactUs";
+import Internships from "./Components/Internships/Internships";
 import a from "../src/App.module.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <MobileApplication />
         <UIUX />
         <SubscibeSlide />
+        <Internships />
         <FAQSlide />
         <ContactUs />
       </div>
